@@ -1,9 +1,9 @@
 # Class
 class:
   # Application instance name
-  instance: Alacritty
+  instance: alacritty
   # General application class
-  general: Alacritty
+  general: alacritty
 
 # Window
 window:
