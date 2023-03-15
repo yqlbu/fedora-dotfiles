@@ -5,16 +5,27 @@ class:
   # General application class
   general: alacritty
 
+# ENV
+env:
+  TERM: xterm-256color
+
 # Window
 window:
   opacity: 0.95
   dimensions:
     columns: 150
     lines: 60
+  padding:
+    x: 5
+    y: 5
+
+# Behavior
+scrolling:
+  history: 5000
 
 # Font
 font:
-  family: "Hack Nerd Font Mono"
+  family: Hack Nerd Font Mono
   size: 16.0
 
 # Shell
