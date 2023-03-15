@@ -1,0 +1,55 @@
+##
+##  | | _______   __           HIKARI AI
+##  | |/ / _ \ \ / /           https://hikariai.net
+##  |   <  __/\ V /            https://link.hikariai.net
+##  |_|\_\___| \_/             https://github.com/yqlbu
+##
+## My fish shell config. Nothing fancy, but I like it
+
+### PATH ###
+fish_add_path $HOME/.linuxbrew/bin
+fish_add_path $HOME/local/bin
+
+### General Settings ###
+set fish_greeting         # Turns off the intro message when pulling up fish shell
+set EDITOR "vim"          # Sets the $EDITOR to vim
+
+export CLICOLOR=1
+export LS_COLORS=(vivid generate nord)
+
+### Fish Alias ###
+
+abbr fish_config "nvim ~/.config/fish/config.fish"
+abbr unset "set --erase"
+# shortcuts
+abbr ..  "cd .."
+abbr ... "cd ../../"
+abbr home "cd ~"
+# abbr vim "nvim"
+abbr lg "lazygit"
+# abbr ra "ranger"
+abbr cs "cowsay"
+# abbr go_async_run "when-changed -r -v -1 . go run"
+# abbr python_async_run "when-changed -r -v -1 . python"
+# # programs and system
+abbr ls "ls -ltrh"
+abbr du "du -d 1 -h"
+abbr kill "killall"
+# kubernetes related
+abbr k "kubectl"
+# journalctl
+abbr journal "journalctl -xefu"
+# ddcutil
+abbr set-br "sudo ddcutil setvcp 10 --display"
+abbr get-br "sudo ddcutil getvcp 10 --display"
+abbr dd "sudo ddcutil"
+# brew
+abbr brew-cleanup "brew cleanup --prune=all"
+
+### Dev ENV ###
+
+# Homebrew env
+[ -d $HOME/.linuxbrew ] && eval ($HOME/.linuxbrew/bin/brew shellenv)
+
+# fzf key-remaps
+fzf_configure_bindings --git_status --history=\ch --variables=\cv --directory=\cx --git_log=\cg
