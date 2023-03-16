@@ -25,10 +25,9 @@ abbr unset "set --erase"
 abbr ..  "cd .."
 abbr ... "cd ../../"
 abbr home "cd ~"
-# abbr vim "nvim"
+abbr vim "nvim"
 abbr lg "lazygit"
-# abbr ra "ranger"
-abbr cs "cowsay"
+abbr ra "ranger"
 # abbr go_async_run "when-changed -r -v -1 . go run"
 # abbr python_async_run "when-changed -r -v -1 . python"
 # # programs and system
@@ -45,6 +44,8 @@ abbr get-br "sudo ddcutil getvcp 10 --display"
 abbr dd "sudo ddcutil"
 # brew
 abbr brew-cleanup "brew cleanup --prune=all"
+# tmux
+abbr t "tmux"
 
 ### Dev ENV ###
 
