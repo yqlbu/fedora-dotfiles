@@ -7,26 +7,24 @@ selection:
 
 live_config_reload: true
 
-# Class
-class:
-  # Application instance name
-  instance: alacritty
-  # General application class
-  general: alacritty
-
 # ENV
 env:
   TERM: screen-256color
 
 # Window
 window:
-  opacity: 0.95
+  opacity: 1
   dimensions:
     columns: 150
     lines: 60
   padding:
     x: 5
     y: 5
+  class:
+    # Application instance name
+    instance: alacritty
+    # General application class
+    general: alacritty
 
 # Behavior
 scrolling:
