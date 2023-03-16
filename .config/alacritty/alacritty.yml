@@ -1,3 +1,12 @@
+# Shell
+shell:
+  program: /usr/bin/fish
+
+selection:
+  save_to_clipboard: true
+
+live_config_reload: true
+
 # Class
 class:
   # Application instance name
@@ -21,16 +30,13 @@ window:
 
 # Behavior
 scrolling:
-  history: 5000
+  history: 10000
+  multiplier: 3
 
 # Font
 font:
-  family: Hack Nerd Font Mono
+  family: "Hack Nerd Font Mono"
   size: 16.0
-
-# Shell
-shell:
-  program: /usr/bin/fish
 
 # Cursor
 cursor:
@@ -66,3 +72,8 @@ colors:
     magenta: '#ff6ac1'
     cyan:    '#9aedfe'
     white:   '#f1f1f0'
+
+# Key Bindings
+key_bindings:
+  - { key: Return, mods: Super|Control, action: SpawnNewInstance }
+
