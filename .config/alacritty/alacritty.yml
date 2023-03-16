@@ -16,7 +16,7 @@ class:
 
 # ENV
 env:
-  TERM: xterm-256color
+  TERM: screen-256color
 
 # Window
 window:
@@ -35,8 +35,16 @@ scrolling:
 
 # Font
 font:
-  family: "Hack Nerd Font Mono"
   size: 16.0
+  normal:
+    family: "Hack Nerd Font Mono"
+    style: Regular
+  bold:
+    family: "Hack Nerd Font Mono"
+    style: Bold
+  italic:
+    family: "Hack Nerd Font Mono"
+    style: Italic
 
 # Cursor
 cursor:
