@@ -6,7 +6,7 @@ export INPUT_METHOD=fcitx
 export SDL_IM_MODULE=fcitx
 
 # theme-related
-export GTK_THEME=Papirus-Dark
+export GTK_THEME=Adwaita:Dark
 export QT_STYLE_OVERRIDE=adwaita-dark
 export QT_QPA_PLATFORMTHEME=gtk2
 
