@@ -2,12 +2,12 @@
 
 # Applications to start on session start
 # Intended to be called from bspwmrc or similar wm startup script
+#
+# desktop cursor theme
+xsetroot -cursor_name left_ptr
 
 # hotkey daemon
 sxhkd &
-
-# desktop cursor theme
-xsetroot -cursor_name left_ptr
 
 # layouts and polybar
 $HOME/.screenlayout/default.sh
@@ -23,7 +23,7 @@ fcitx5 &
 picom --config "$HOME/.config/bspwm/picom.conf" &
 
 # notification daemon
-# dunst &
+dunst &
 
 # wallpaper manager
 nitrogen --restore &
