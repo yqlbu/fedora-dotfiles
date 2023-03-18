@@ -1,0 +1,34 @@
+#! /bin/sh
+
+# Applications to start on session start
+# Intended to be called from bspwmrc or similar wm startup script
+
+# hotkey daemon
+sxhkd &
+
+# desktop cursor theme
+xsetroot -cursor_name left_ptr
+
+# layouts and polybar
+$HOME/.screenlayout/default.sh
+$HOME/.config/polybar/launch.sh &
+
+# mouse cursor rate
+xset r rate 200 25
+
+# input method
+fcitx5 &
+
+# window compositor
+picom --config "$HOME/.config/bspwm/picom.conf" &
+
+# notification daemon
+# dunst &
+
+# wallpaper manager
+nitrogen --restore &
+# nitrogen --set-auto "$HOME/Pictures/wallpaper/bg.jpg" &
+# feh --bg-fill ~/Pictures/background.jpg &
+
+# extras
+# lxpolkit &

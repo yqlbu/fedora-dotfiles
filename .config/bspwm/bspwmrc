@@ -3,11 +3,8 @@
 # clean lingering programs when reloaded
 $HOME/.config/bspwm/clean.sh &
 
-# set desktop cursor theme
-xsetroot -cursor_name left_ptr
-# load layouts and polybar
-$HOME/.screenlayout/default.sh
-bash ~/.config/polybar/launch.sh &
+#Auto-Start
+$HOME/.local/bin/autostart
 
 # variable Defines
 color0=#3B4252
@@ -24,9 +21,9 @@ while :; do
 done &
 
 # screen
-bspc monitor DisplayPort-1 -d V
-bspc monitor DisplayPort-2 -d I II III
-bspc monitor DisplayPort-3 -d IV
+bspc monitor DisplayPort-1 -d 4 5
+bspc monitor DisplayPort-2 -d 1 2 3
+bspc monitor DisplayPort-3 -d 6 7
 
 # global settings
 bspc config border_width         8
@@ -45,11 +42,3 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 
-#Auto-Start
-xset r rate 200 25
-fcitx5 &
-# lxpolkit &
-picom --config "$HOME/.config/bspwm/picom.conf" &
-nitrogen --restore &
-# nitrogen --set-auto "$HOME/Pictures/wallpaper/bg.jpg" &
-# feh --bg-fill ~/Pictures/background.jpg &
