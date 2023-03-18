@@ -4,6 +4,7 @@ configuration {
   show-icons: true;
   icon-theme: "Papirus";
   font: "Fira Nerd Font Mono 14";
+  dpi: 144;
   display-drun: "";
   display-window: "﩯 ";
   display-combi: "  ";
