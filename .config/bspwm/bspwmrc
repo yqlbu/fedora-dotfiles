@@ -1,0 +1,52 @@
+#!/usr/bin/sh
+
+# clean lingering programs when reloaded
+$HOME/.config/bspwm/clean.sh &
+
+# start polybar
+bash ~/.config/polybar/launch.sh &
+$HOME/.screenlayout/default.sh
+# feh --bg-fill ~/Pictures/background.jpg &
+
+# variable Defines
+color0=#3B4252
+color1=#D8DEE9
+
+# make sure sxhkd is always running
+while :; do
+    if pgrep -x sxhkd > /dev/null; then
+        true
+    else
+        sxhkd &
+    fi
+    sleep 5
+done &
+
+sxhkd &
+
+# screen
+bspc monitor DisplayPort-2 -d I II III
+bspc monitor DisplayPort-3 -d IV V
+
+# global settings
+bspc config border_width         8
+bspc config window_gap           20
+bspc config focused_border_color "#555753"
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+#Auto-Start
+# lxpolkit &
+picom --config "$HOME/.config/bspwm/picom.conf" &
+nitrogen --restore &
+# keyboard repeate rate
+xset r rate 200 25
+# nitrogen --set-auto "$HOME/Pictures/wallpaper/bg.jpg" &
