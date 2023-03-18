@@ -25,7 +25,7 @@ abbr unset "set --erase"
 abbr ..  "cd .."
 abbr ... "cd ../../"
 abbr home "cd ~"
-# abbr vim "nvim"
+abbr vim "nvim"
 abbr lg "lazygit"
 abbr ra "ranger"
 # abbr go_async_run "when-changed -r -v -1 . go run"
@@ -38,14 +38,21 @@ abbr kill "killall"
 abbr k "kubectl"
 # journalctl
 abbr journal "journalctl -xefu"
-# ddcutil
-abbr set-br "sudo ddcutil setvcp 10 --display"
-abbr get-br "sudo ddcutil getvcp 10 --display"
-abbr dd "sudo ddcutil"
 # brew
 abbr brew-cleanup "brew cleanup --prune=all"
 # tmux
 abbr t "tmux"
+# neofetch
+abbr logo "neofetch"
+
+### Device Control ###
+# audio
+abbr get-audio-out "$HOME/dotfiles/scripts/get-audio-output.sh"
+abbr set-audio-out "pactl set-default-sink"
+# ddcutil
+abbr set-br "sudo ddcutil setvcp 10 --display"
+abbr get-br "sudo ddcutil getvcp 10 --display"
+abbr dd "sudo ddcutil"
 
 ### Dev ENV ###
 

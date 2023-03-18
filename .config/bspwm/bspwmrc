@@ -39,15 +39,17 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
+bspc rule -a "microsoft-edge"='^2'
+bspc rule -a firefox='^4'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 #Auto-Start
+# keyboard repeate rate
+xset r rate 200 25
+fcitx5 &
 # lxpolkit &
 picom --config "$HOME/.config/bspwm/picom.conf" &
 nitrogen --restore &
-# keyboard repeate rate
-xset r rate 200 25
 # nitrogen --set-auto "$HOME/Pictures/wallpaper/bg.jpg" &

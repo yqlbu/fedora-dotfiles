@@ -41,7 +41,6 @@ local setup_lsp_installer = function()
       use("gopls")
       use("pylsp")
       use("graphql")
-      use("remark_ls")
       use("vimls")
       use("tflint")
       use(
