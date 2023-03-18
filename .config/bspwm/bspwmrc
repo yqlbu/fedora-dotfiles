@@ -25,8 +25,9 @@ done &
 sxhkd &
 
 # screen
+bspc monitor DisplayPort-1 -d V
 bspc monitor DisplayPort-2 -d I II III
-bspc monitor DisplayPort-3 -d IV V
+bspc monitor DisplayPort-3 -d IV
 
 # global settings
 bspc config border_width         8
