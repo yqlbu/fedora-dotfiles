@@ -3,17 +3,15 @@
 # clean lingering programs when reloaded
 $HOME/.config/bspwm/clean.sh &
 
-# start polybar
-bash ~/.config/polybar/launch.sh &
+# set desktop cursor theme
+xsetroot -cursor_name left_ptr
+# load layouts and polybar
 $HOME/.screenlayout/default.sh
-# feh --bg-fill ~/Pictures/background.jpg &
+bash ~/.config/polybar/launch.sh &
 
 # variable Defines
 color0=#3B4252
 color1=#D8DEE9
-
-# load key-mods
-sxhkd &
 
 # make sure sxhkd is always running
 while :; do
@@ -59,7 +57,6 @@ export QT_STYLE_OVERRIDE=adwaita-dark
 export XDG_CURRENT_DESKTOP=Unity
 export QT_QPA_PLATFORMTHEME=gtk2
 
-
 #Auto-Start
 xset r rate 200 25
 fcitx5 &
@@ -67,3 +64,4 @@ fcitx5 &
 picom --config "$HOME/.config/bspwm/picom.conf" &
 nitrogen --restore &
 # nitrogen --set-auto "$HOME/Pictures/wallpaper/bg.jpg" &
+# feh --bg-fill ~/Pictures/background.jpg &
