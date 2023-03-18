@@ -12,6 +12,9 @@ $HOME/.screenlayout/default.sh
 color0=#3B4252
 color1=#D8DEE9
 
+# load key-mods
+sxhkd &
+
 # make sure sxhkd is always running
 while :; do
     if pgrep -x sxhkd > /dev/null; then
@@ -21,8 +24,6 @@ while :; do
     fi
     sleep 5
 done &
-
-sxhkd &
 
 # screen
 bspc monitor DisplayPort-1 -d V
@@ -45,8 +46,21 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
+# input-method
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export INPUT_METHOD=fcitx
+export SDL_IM_MODULE=fcitx
+
+# theme-related
+export GTK_THEME=Adwaita:dark
+export QT_STYLE_OVERRIDE=adwaita-dark
+export XDG_CURRENT_DESKTOP=Unity
+export QT_QPA_PLATFORMTHEME=gtk2
+
+
 #Auto-Start
-# keyboard repeate rate
 xset r rate 200 25
 fcitx5 &
 # lxpolkit &
