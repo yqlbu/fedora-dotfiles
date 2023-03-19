@@ -23,10 +23,13 @@ xset r rate 200 25
 fcitx5 &
 
 # window compositor
-picom --config "$HOME/.config/bspwm/picom.conf" &
+picom --config "$HOME/.config/picom/picom.conf" &
 
 # notification daemon
 dunst &
+
+# screenshot daemon
+spectacle &
 
 # wallpaper manager
 nitrogen --restore &
