@@ -40,6 +40,6 @@ bspc config gapless_monocle      true
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 # bspc rule -a "*:microsoft-edge" desktop=^3 follow=off
 # bspc rule -a "*:Navigator" desktop=^5 follow=off
-bspc rule -a "*:telegram-desktop" desktop=^1 follow=off
+# bspc rule -a "*:telegram-desktop" desktop=^1 follow=off
 bspc rule -a Screenkey manage=off
 
