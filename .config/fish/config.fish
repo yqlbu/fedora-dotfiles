@@ -8,7 +8,7 @@
 
 ### PATH ###
 fish_add_path $HOME/.linuxbrew/bin
-fish_add_path $HOME/local/bin
+fish_add_path $HOME/.local/bin
 
 ### General Settings ###
 set fish_greeting         # Turns off the intro message when pulling up fish shell
