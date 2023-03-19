@@ -28,9 +28,6 @@ picom --config "$HOME/.config/picom/picom.conf" &
 # notification daemon
 dunst &
 
-# screenshot daemon
-spectacle &
-
 # wallpaper manager
 nitrogen --restore &
 # $HOME/.local/bin/feh-blur &
