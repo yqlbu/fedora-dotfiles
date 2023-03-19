@@ -26,7 +26,7 @@ bspc monitor DisplayPort-2 -d 1 2 3
 bspc monitor DisplayPort-3 -d 5
 
 # global settings
-bspc config border_width         8
+bspc config border_width         4
 bspc config window_gap           20
 bspc config focused_border_color "#555753"
 
