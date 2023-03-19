@@ -26,8 +26,8 @@ picom --config "$HOME/.config/bspwm/picom.conf" &
 dunst &
 
 # wallpaper manager
-nitrogen --restore &
-# nitrogen --set-auto "$HOME/Pictures/wallpaper/bg.jpg" &
+# nitrogen --restore &
+$HOME/.local/bin/feh-blur &
 # feh --bg-fill ~/Pictures/background.jpg &
 
 # extras
