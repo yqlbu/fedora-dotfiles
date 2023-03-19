@@ -20,7 +20,10 @@ while :; do
     sleep 5
 done &
 
-# screen
+# define desktop order
+# refence: https://github.com/baskerville/bspwm/issues/1424
+bspc wm -O DisplayPort-2 DisplayPort-1 DisplayPort-3
+# define desktop numbers
 bspc monitor DisplayPort-1 -d 4
 bspc monitor DisplayPort-2 -d 1 2 3
 bspc monitor DisplayPort-3 -d 5

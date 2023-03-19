@@ -7,7 +7,7 @@
 xsetroot -cursor_name left_ptr
 
 # mouse wheel
-imwheel &
+xinput --set-prop "Logitech USB Receiver" "libinput Natural Scrolling Enabled" 1
 
 # hotkey daemon
 sxhkd &
