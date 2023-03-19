@@ -1,5 +1,32 @@
-export INPUT_METHOD  DEFAULT=fcitx
-export GTK_IM_MODULE DEFAULT=fcitx
-export QT_IM_MODULE  DEFAULT=fcitx
-export XMODIFIERS    DEFAULT="@im=fcitx"
-export SDL_IM_MODULE DEFAULT=fcitx
+# input method
+INPUT_METHOD=fcitx
+XMODIFIERS=@im=fcitx5
+QT_IM_MODULE=fcitx
+SDL_IM_MODULE=fcitx
+IMSETTINGS_MODULE=fcitx5
+GTK_IM_MODULE=fcitx
+
+# HiDPI
+# export QT_AUTO_SCREEN_SCALE_FACTOR=1.5
+# export QT_SCALE_FACTOR=1.5
+# export GDK_SCALE=1.5
+# export GDK_DPI_SCALE=1.5
+
+# theme-related
+export GTK_THEME=Material-Black-Blueberry
+export GTK_ICON_THEME=Papirus-Dark
+export QT_STYLE_OVERRIDE=Material-Black-Blueberry
+export QT_QPA_PLATFORMTHEME=gtk2
+export XCURSOR_THEME="Bibata-Modern-Ice"
+export XCURSOR_SIZE=48
+
+# system default
+export EDITOR=nvim
+export VISUAL=nvim
+export TERMINAL=alacritty
+export BROWSER=microsoft-edge
+export VIDEO=flv
+export COLORTERM=truecolor
+export PAGER=less
+export WM=bspwm
+export DE=
