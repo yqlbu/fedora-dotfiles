@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + r
-	rofi -show drun -show combi
+	rofi -show drun
 
 # make sxhkd reload its configuration files:
 super + Escape
