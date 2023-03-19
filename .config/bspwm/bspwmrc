@@ -4,7 +4,7 @@
 $HOME/.config/bspwm/clean.sh &
 
 #Auto-Start
-$HOME/.local/bin/autostart
+sh $HOME/.local/bin/autostart
 
 # variable Defines
 color0=#3B4252
@@ -21,9 +21,9 @@ while :; do
 done &
 
 # screen
-bspc monitor DisplayPort-1 -d 4 5
+bspc monitor DisplayPort-1 -d 4
 bspc monitor DisplayPort-2 -d 1 2 3
-bspc monitor DisplayPort-3 -d 6 7
+bspc monitor DisplayPort-3 -d 6
 
 # global settings
 bspc config border_width         8
