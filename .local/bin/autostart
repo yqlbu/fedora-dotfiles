@@ -6,6 +6,9 @@
 # desktop cursor theme
 xsetroot -cursor_name left_ptr
 
+# mouse wheel
+imwheel &
+
 # hotkey daemon
 sxhkd &
 
