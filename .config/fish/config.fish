@@ -46,6 +46,8 @@ abbr t "tmux"
 abbr logo "neofetch"
 
 ### Device Control ###
+# system
+abbr sleep "xset dpms force suspend"
 # audio
 abbr get-audio-out "$HOME/dotfiles/scripts/get-audio-output.sh"
 abbr set-audio-out "pactl set-default-sink"
