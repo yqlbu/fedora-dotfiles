@@ -14,6 +14,10 @@ super + r
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# lock screen
+super + ctrl + x
+	betterlockscreen -l
+
 # My program Hotkeys
 super + b
 	brave-browser-stable
