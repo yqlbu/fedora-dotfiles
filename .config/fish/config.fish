@@ -9,6 +9,7 @@
 ### PATH ###
 fish_add_path $HOME/.linuxbrew/bin
 fish_add_path $HOME/.local/bin
+fish_add_path $HOME/.local/scripts
 
 ### General Settings ###
 set fish_greeting         # Turns off the intro message when pulling up fish shell
@@ -49,7 +50,7 @@ abbr logo "neofetch"
 # system
 abbr sleep "xset dpms force suspend"
 # audio
-abbr get-audio-out "$HOME/dotfiles/scripts/get-audio-output.sh"
+abbr get-audio-out "$HOME/.local/scripts/get-audio-out"
 abbr set-audio-out "pactl set-default-sink"
 # ddcutil
 abbr set-br "sudo ddcutil setvcp 10 --display"

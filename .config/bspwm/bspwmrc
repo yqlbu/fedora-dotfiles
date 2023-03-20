@@ -4,7 +4,7 @@
 $HOME/.config/bspwm/clean.sh &
 
 #Auto-Start
-sh $HOME/.local/bin/autostart
+sh $HOME/.local/scripts/autostart
 
 # variable Defines
 color0=#3B4252
