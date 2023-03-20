@@ -3,7 +3,7 @@
 configuration {
   show-icons: true;
   icon-theme: "Papirus";
-  font: "FiraNerd Font Mono 14";
+  font: "FiraCode Nerd Font Mono 14";
   dpi: 144;
   display-drun: "";
   display-window: "﩯 ";
