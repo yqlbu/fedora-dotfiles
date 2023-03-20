@@ -13,7 +13,7 @@ env:
 
 # Window
 window:
-  opacity: 1
+  opacity: 0.9
   dimensions:
     columns: 150
     lines: 60
@@ -54,7 +54,7 @@ cursor:
 colors:
   # Default colors
   primary:
-    background: '#282a36'
+    background: '0x181818'
     foreground: '#eff0eb'
 
   # Normal colors
