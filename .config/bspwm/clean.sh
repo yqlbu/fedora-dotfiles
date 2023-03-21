@@ -8,29 +8,28 @@
 
 # List of applications to run
 APPS=(
-    synergy
-    flameshot
-    )
+  synergy
+  flameshot
+)
 
 # Some applications start child applications that need to be killed on reload
 KILL=(
-    synergys
-    )
+  synergys
+)
 
 # First kill lingering apps
-for app in "${APPS[@]}"
-do
-    kill -9 $(pidof $app)
+for app in "${APPS[@]}"; do
+  kill -9 $(pidof $app)
 done
-for app in "${KILL[@]}"
-do
-    kill -9 $(pidof $app)
-    while _is_running $app; do sleep 1; done
+for app in "${KILL[@]}"; do
+  kill -9 $(pidof $app)
+  while _is_running $app; do sleep 1; done
 done
 
 # Start new instances
-for app in "${APPS[@]}"
-do
-    env $app ${@:2} &
+for app in "${APPS[@]}"; do
+  env $app ${@:2} &
 done
 
+# Kill pipewrite
+killall -9 pipewire
