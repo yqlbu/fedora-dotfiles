@@ -15,6 +15,9 @@ xset r rate 200 25
 # hotkey daemon
 sxhkd &
 
+# screenshot manager
+spectacle -s &
+
 # layouts and polybar
 $HOME/.screenlayout/default.sh
 $HOME/.config/polybar/launch.sh &
