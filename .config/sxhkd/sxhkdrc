@@ -11,7 +11,7 @@ super + r
 	rofi -show drun
 
 # reload settings
-super + shift + r
+ctrl + r
 	reload
 
 # make sxhkd reload its configuration files:
