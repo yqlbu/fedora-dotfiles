@@ -28,6 +28,12 @@ super + p
 super + shift + p
 	flameshot gui -p /media/drive/Screenshots
 
+# copy paste
+super + c
+	echo -n | copyq copy
+super + v
+	copyq paste
+
 #
 # bspwm hotkeys
 #

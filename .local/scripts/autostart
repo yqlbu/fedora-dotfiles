@@ -9,15 +9,15 @@ xsetroot -cursor_name left_ptr
 # mouse wheel
 xinput --set-prop "Logitech USB Receiver" "libinput Natural Scrolling Enabled" 1
 
+# keyboard key repeat rate
+xset r rate 200 25
+
 # hotkey daemon
 sxhkd &
 
 # layouts and polybar
 $HOME/.screenlayout/default.sh
 $HOME/.config/polybar/launch.sh &
-
-# keyboard key repeat rate
-xset r rate 200 25
 
 # input method
 fcitx5 &
@@ -27,6 +27,9 @@ picom --config "$HOME/.config/picom/picom.conf" &
 
 # notification daemon
 dunst &
+
+# clipboard manager
+copyq &
 
 # wallpaper manager
 nitrogen --restore &
