@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# kill pipewire process
+killall -9 pipewire
+
+# mouse wheel
+xinput --set-prop "Logitech USB Receiver" "libinput Natural Scrolling Enabled" 1
+
+# keyboard key repeat rate
+xset r rate 200 25
+
