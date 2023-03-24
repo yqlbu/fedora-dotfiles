@@ -6,7 +6,7 @@ function M.setup()
   nvim_treesitter_configs.setup(
     {
       ensure_installed = "all",
-      ignore_install = {"swift"},
+      ignore_install = {"swift", "phpdoc", "beancount"},
       autopairs = {enable = true},
       highlight = {enable = true},
       indent = {enable = true},
