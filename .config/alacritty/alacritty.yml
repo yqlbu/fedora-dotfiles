@@ -54,7 +54,7 @@ cursor:
 colors:
   # Default colors
   primary:
-    background: '0x181818'
+    background: '#1c1c1c'
     foreground: '#eff0eb'
 
   # Normal colors
