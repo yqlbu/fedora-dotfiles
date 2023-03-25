@@ -19,7 +19,7 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 # lock screen
-super + ctrl + x
+super + ctrl + l
 	betterlockscreen -l
 
 # My program Hotkeys
@@ -27,7 +27,7 @@ super + b
 	brave-browser-stable
 
 super + p 
-	flameshot full -p /media/drive/Screenshots
+	powermenu
 
 super + shift + p
 	flameshot gui -p /media/drive/Screenshots
