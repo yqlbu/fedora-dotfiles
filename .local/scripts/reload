@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# reload polybar
-$HOME/.config/polybar/launch.sh
-
 # kill pipewire process
 killall -9 pipewire
+
+# reload polybar
+$HOME/.config/polybar/launch.sh
 
 # mouse wheel
 xinput --set-prop "Logitech USB Receiver" "libinput Natural Scrolling Enabled" 1
